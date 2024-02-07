@@ -1,38 +1,88 @@
 .App {
+  position: relative;
+  height: 100%;
+  top: -20px;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  background-color: #FFFFFF;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
+  height: 100%;
+}
+
+/*Accueil*/
+.homeDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.presentDiv {
+  width: 40%;
+  line-height: 30px;
+}
+
+.languagesDiv {
+  width: 40%;
+  display: grid;
+  grid-row: 2;
+}
+
+.oc {
+  color: #7451eb;
+}
+
+
+/*Mes projets réalisés*/
+.carrousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modale {
+  width: 370px;
+  height: 360px;
+  background-color: aliceblue;
+  position: absolute;
+}
+
+/*Contact*/
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+form input {
+  margin-bottom: 20px;
+  width: 300px;
+  height: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form textarea {
+  width: 1000px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+/*Card*/
+.flip {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background-color: transparent;
 }
