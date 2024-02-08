@@ -54,3 +54,10 @@ footer {
   color: #817d7d;
   background-color: rgb(2, 5, 54);
 }
+
+.footerDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0;
+}

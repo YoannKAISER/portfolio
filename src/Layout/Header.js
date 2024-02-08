@@ -8,8 +8,9 @@ function Header() {
             <h1><img src={YK} alt="Yoann KAISER" width="260px" height="30px" /></h1>
             <nav>
                 <Link to="/">Accueil</Link>
+                <Link to="/Mes Compétences">Mes Compétences</Link>
                 <Link to="/Mes projets">Mes projets réalisés</Link>
-                <Link to="/Contact">Contact</Link>
+
             </nav>
         </header>
     );

@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #FFFFFF;
+  background-color: #85adbf;
 }
 
 html {
@@ -25,8 +25,7 @@ body {
 /*Accueil*/
 .homeDiv {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .presentDiv {
@@ -34,7 +33,7 @@ body {
   line-height: 30px;
 }
 
-.languagesDiv {
+.skillsDiv {
   width: 40%;
   display: grid;
   grid-row: 2;
@@ -42,6 +41,13 @@ body {
 
 .oc {
   color: #7451eb;
+}
+
+/*Mes compétences*/
+.bodyDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 

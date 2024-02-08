@@ -1,8 +1,5 @@
 import React from "react";
-import html5 from "../Images/Langages/HTML5.webp"
-import css3 from "../Images/Langages/CSS3.webp"
-import js from "../Images/Langages/JS.webp"
-import react from "../Images/Langages/React.webp"
+
 
 function Accueil() {
     return (
@@ -17,19 +14,7 @@ function Accueil() {
                         J'aime le fait que dans ce domaine, on en apprend tous les jours et je trouve fascinant la puissance du web et la quantité de ce qu'on peut y faire.
                     </p>
                 </div>
-                <div className="languagesDiv">
-                    <h2>Les langages et les frameworks que j'ai appris</h2>
-                    <div>
-                        <img src={html5} alt="html5" title="HTML 5 - Le respect des normes W3C, la sémantique et les règles d'accessibilité me sont familières." width="150px" height="120px" />
-                        <img src={css3} alt="css3" title="CSS 3 - Entre les animations en Css3, le Scss ou encore Flexbox, je n'en ai jamais fini d'en apprendre..." width="150px" height="120px" />
-                    </div>
-                    <div>
-                        <img src={js} alt="js" title="JavaScript - Mon petit point faible. Mes compétences sont encore limitées en JavaScript natif, je vais m'y améliorer" width="150px" height="120px" />
-                        <img src={react} alt="react" title="React - J'aime bien ce framework JS ! C'est en React que j'ai conçu mon portfolio." width="150px" height="120px" />
-                    </div>
-                </div>
-            </div>
-            
+            </div> 
         </section>
     );
 };
