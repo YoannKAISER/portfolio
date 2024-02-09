@@ -71,36 +71,20 @@ body {
   align-items: center;
 }
 
-.modale {
-  width: 370px;
-  height: 360px;
-  background-color: aliceblue;
-  position: absolute;
-}
-
-/*Contact*/
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-form input {
-  margin-bottom: 20px;
-  width: 300px;
-  height: 20px;
-}
-
-form textarea {
-  width: 1000px;
-  height: 150px;
-  margin-bottom: 20px;
-}
-
-/*Card*/
 .flip {
   position: absolute;
   width: 350px;
   height: 350px;
   background-color: transparent;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+  display: flex;
+  flex-direction: column;
+}
+
+.textCard {
+  font-size: smaller;
 }

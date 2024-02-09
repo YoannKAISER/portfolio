@@ -1,8 +1,9 @@
 import { useState } from "react";
 import ReactCardFlip from "react-card-flip";
+import { Link } from "react-router-dom";
 
 
-export default function FlipCard({ image, h2, h3, p }) {
+export default function FlipCard({ image, h2, h3, p, link, lien, p4, p4Lien, p9, p9Lien }) {
   const [isFlipped, setIsFlipped] = useState(false);
   const flipCard = () => setIsFlipped(!isFlipped);
   
@@ -16,7 +17,10 @@ export default function FlipCard({ image, h2, h3, p }) {
           <div style={{backgroundColor:"white", height:"100%"}}>
             <h2>{h2}</h2>
             <h3>{h3}</h3>
-            <p>{p}</p>
+            <p className="textCard">{p}</p>
+            <Link to={lien} style={{zIndex:"1", position:"relative"}} className="link">{link}</Link>
+            <Link to={p4Lien} style={{zIndex:"1", position:"relative"}} className="link">{p4}</Link>
+            <Link to={p9Lien} style={{zIndex:"1", position:"relative"}} className="link">{p9}</Link>
           </div>
           <button className="flip" onClick={flipCard}></button>
         </Card>
