@@ -4,7 +4,7 @@ import Carrousel from "../Components/Carrousel";
 function MesProjets() {
     return(
         <section>
-            <h1>Mes projets réalisés</h1>
+            <h2>Mes projets réalisés</h2>
             <Carrousel />
         </section>
     )

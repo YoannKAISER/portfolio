@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #85adbf;
+  background-color: #96d6f3;
 }
 
 html {
@@ -29,8 +29,8 @@ body {
 }
 
 .presentDiv {
-  width: 40%;
   line-height: 30px;
+  width: 60%;
 }
 
 .skillsDiv {
@@ -50,6 +50,18 @@ body {
   justify-content: space-between;
 }
 
+@media (max-width: 767px) {
+  .bodyDiv {
+    flex-direction: column;
+    align-items: baseline;
+    margin-left: 20%;
+  }
+
+  .langDiv {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
 /*Mes projets réalisés*/
 .carrousel {
