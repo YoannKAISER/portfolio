@@ -5,8 +5,8 @@ function Accueil() {
     return (
         <section>
             <div className="homeDiv">
+                <h2>Je me présente</h2>
                 <div className="presentDiv">
-                    <h2>Je me présente</h2>
                     <p>
                         Je m'appelle Yoann, j'ai {$age} ans.<br/> Je suis intégrateur web, après une reconversion professionnel.<br/>
                         Intéressé par la programmation, le SEO, l'amélioration des performances des sites et applications web,

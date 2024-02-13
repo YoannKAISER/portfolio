@@ -9,6 +9,7 @@ function App() {
   return (
     <main className="App">
     <Routes>
+      <Route path='Projet12/' element={<Accueil />} />
       <Route path='/' element={<Accueil />} />
       <Route path='/Mes compétences' element={<MesCompétences />} />
       <Route path='/Mes projets' element={<MesProjets />} />
