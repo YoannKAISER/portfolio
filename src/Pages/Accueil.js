@@ -1,20 +1,13 @@
 import React from "react";
-
+import bgImg from "../Images/Fond_décran_page_daccueil.webp"
+import { Link } from "react-router-dom";
 
 function Accueil() {
     return (
-        <section>
-            <div className="homeDiv">
-                <h2>Je me présente</h2>
-                <div className="presentDiv">
-                    <p>
-                        Je m'appelle Yoann, j'ai {$age} ans.<br/> Je suis intégrateur web, après une reconversion professionnel.<br/>
-                        Intéressé par la programmation, le SEO, l'amélioration des performances des sites et applications web,
-                        je me suis formé à ce domaine en faisant la formation Intégrateur web chez <a href="https://openclassrooms.com/" className="oc">OpenClassrooms.</a><br/>
-                        J'aime le fait que dans ce domaine, on en apprend tous les jours et je trouve fascinant la puissance du web et la quantité de ce qu'on peut y faire.
-                    </p>
-                </div>
-            </div> 
+        <section style={{backgroundImage: `url(${bgImg})`, alignItems:"flex-start", justifyContent:"flex-start"}}>
+            <h1 style={{transition: "transform 1s ease-in-out"}}>Yoann KAISER</h1>
+            <p style={{color:"white", marginLeft:"10%", fontSize:"40px", textShadow:"0 0 black", animation: "textAnimation 1s ease-in-out forwards"}}>Intégrateur web</p>
+            <Link to="/APropos" style={{marginLeft:"10%", fontSize:"30px", position:"absolute", bottom:"180px", color:"lawngreen", textDecoration:"underline", backgroundColor:"transparent"}}>Mon portfolio</Link>
         </section>
     );
 };

@@ -1,16 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import YK from "../Images/Yoann KAISER.webp"
 
 function Header() {
     return (
         <header>
-            <h1><img src={YK} alt="Yoann KAISER" width="260px" height="30px" /></h1>
+            <Link to="/" style={{fontSize:"50px", color:"white", fontFamily:"Italianno", backgroundColor:"transparent"}} className="linkHeader">Yoann KAISER</Link>
             <nav>
-                <Link to="/">Accueil</Link>
+                <Link to="/APropos">A propos de moi</Link>
                 <Link to="/Mes Compétences">Mes Compétences</Link>
                 <Link to="/Mes projets">Mes projets réalisés</Link>
-
             </nav>
         </header>
     );

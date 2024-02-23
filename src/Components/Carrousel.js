@@ -186,7 +186,7 @@ export default class Example extends Component {
   
   render() {
     return (
-      <div style={{ width: "80%", height: "350px", margin: "0 auto" }}>
+      <div style={{ width: "50%", height: "350px", margin: "0 auto" }}>
         <Carousel
           slides={this.slides}
           goToSlide={this.state.goToSlide}

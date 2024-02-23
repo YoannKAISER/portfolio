@@ -12,7 +12,7 @@ export default function FlipCard({ image, h2, h3, p, link, lien, p4, p4Lien, p9,
         <Card>
         <img src={image} alt="Project" />
         <button className="flip" onClick={flipCard}></button>
-      </Card>
+        </Card>
         <Card>
           <div style={{backgroundColor:"white", height:"100%"}}>
             <h2>{h2}</h2>
