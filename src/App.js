@@ -10,7 +10,7 @@ function App() {
   return (
     <main className="App">
     <Routes>
-      <Route path='/' element={<Accueil />} />
+      <Route path='/portfolio' element={<Accueil />} />
       <Route path='/APropos' element={<APropos />} />
       <Route path='/Mes compétences' element={<MesCompétences />} />
       <Route path='/Mes projets' element={<MesProjets />} />
