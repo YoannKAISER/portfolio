@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Projet12/static/css/main.35d22da0.css",
-    "main.js": "/Projet12/static/js/main.7928c099.js",
+    "main.css": "/Projet12/static/css/main.25ecd2e5.css",
+    "main.js": "/Projet12/static/js/main.45fc43a1.js",
     "static/media/Fond_décran_page_daccueil.webp": "/Projet12/static/media/Fond_décran_page_daccueil.8fc9f808dc32618d9f5a.webp",
     "static/media/Fond_décran_page_mes_projets.webp": "/Projet12/static/media/Fond_décran_page_mes_projets.5ed8170dbd87cf54aea2.webp",
     "static/media/Fond_décran_page_mes_compétences.webp": "/Projet12/static/media/Fond_décran_page_mes_compétences.af34fa834c682994624e.webp",
@@ -11,6 +11,7 @@
     "static/media/Oh-my-food.webp": "/Projet12/static/media/Oh-my-food.d1e9dc51dd94012ad5d9.webp",
     "static/media/Argent Bank.jpg": "/Projet12/static/media/Argent Bank.3e7b49b443afab6b19bc.jpg",
     "static/media/NinaCarducci.webp": "/Projet12/static/media/NinaCarducci.12c0567f46c570c4b363.webp",
+    "static/media/icone_return.webp": "/Projet12/static/media/icone_return.b0b9c8e8363bab38c71d.webp",
     "static/media/Fond_décran_page_a_propos.webp": "/Projet12/static/media/Fond_décran_page_a_propos.48506401b651af02b9e7.webp",
     "static/media/RidingCities.webp": "/Projet12/static/media/RidingCities.777eaaa7c36a4e6385d6.webp",
     "static/media/React.webp": "/Projet12/static/media/React.f7373b379e801be4bda1.webp",
@@ -22,11 +23,11 @@
     "static/media/CSS3.webp": "/Projet12/static/media/CSS3.d3e6b275fd1c432ebc30.webp",
     "index.html": "/Projet12/index.html",
     "static/media/GitHub-Logo.webp": "/Projet12/static/media/GitHub-Logo.d2f2dbbdca2fa901270e.webp",
-    "main.35d22da0.css.map": "/Projet12/static/css/main.35d22da0.css.map",
-    "main.7928c099.js.map": "/Projet12/static/js/main.7928c099.js.map"
+    "main.25ecd2e5.css.map": "/Projet12/static/css/main.25ecd2e5.css.map",
+    "main.45fc43a1.js.map": "/Projet12/static/js/main.45fc43a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.35d22da0.css",
-    "static/js/main.7928c099.js"
+    "static/css/main.25ecd2e5.css",
+    "static/js/main.45fc43a1.js"
   ]
 }
