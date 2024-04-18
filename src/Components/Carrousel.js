@@ -12,11 +12,36 @@ import NinaCarducci from "../Images/Projets/NinaCarducci.webp";
 import Events from "../Images/Projets/77Events.webp";
 import ArgentBank from "../Images/Projets/Argent Bank.jpg";
 import FlipCard from "./FlipCard";
+import returnArrow from "../Images/icone_return.webp"
 
-export default class Example extends Component {
+export default class Carrousel extends Component {
   state = {
     showNavigation: true,
-    config: config.gentle
+    config: config.gentle,
+    carouselWidth: "50%",
+    cardWidth: "210px",
+    cardHeight: "210px"
+  };
+
+  componentDidMount() {
+    window.addEventListener("resize", this.handleResize);
+    this.handleResize();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.handleResize);
+  }
+
+  handleResize = () => {
+    const newWidth = window.innerWidth < 768 ? "50%" : "70%";
+    const newCardWidth = window.innerWidth < 768 ? "210px" : "350px";
+    const newCardHeight = window.innerWidth < 768 ? "210px" : "350px";
+  
+    this.setState({
+      carouselWidth: newWidth,
+      cardWidth: newCardWidth,
+      cardHeight: newCardHeight
+    });
   };
 
   slides = [
@@ -26,8 +51,8 @@ export default class Example extends Component {
         <FlipCard 
           image={RidingCities} 
           title="Riding Cities" 
-          width="350px" 
-          height="350px" 
+          width="210px" 
+          height="210px" 
           alt="Riding Cities" 
           h2="Premiers pas sur le langage HTML" 
           h3="Riding Cities" 
@@ -35,6 +60,7 @@ export default class Example extends Component {
             Vous l'utiliserez bientôt pour développer des sites plus ambitieux, mais dans un premier temps, faites vos premiers pas sur HTML..."
           link="Lien vers le code du projet" 
           lien="https://github.com/YoannKAISER/Projet2.git"
+          icone={returnArrow}
         />
     },
     {
@@ -43,8 +69,8 @@ export default class Example extends Component {
         <FlipCard 
           image={Booki} 
           title="Booki" 
-          width="350px" 
-          height="350px" 
+          width="210px" 
+          height="210px" 
           alt="Booki"
           h2="Créez la page d'accueil d'une agence de voyage avec HTML & CSS" 
           h3="Booki" 
@@ -52,6 +78,7 @@ export default class Example extends Component {
             Vous êtes chargé d'intégrer l'interface du site avec du code HTML et CSS."
           link="Lien vers le code du projet"
           lien="https://github.com/YoannKAISER/Projet3.git"
+          icone={returnArrow}
         />
     },
     {
@@ -60,8 +87,8 @@ export default class Example extends Component {
         <FlipCard 
           image={OhMyFood} 
           title="Oh My Food" 
-          width="350px" 
-          height="350px" 
+          width="210px" 
+          height="210px" 
           alt="Oh My Food"
           h2="Améliorez l'interface d'un site mobile avec des animations CSS" 
           h3="Oh My Food" 
@@ -71,6 +98,7 @@ export default class Example extends Component {
           lien="https://github.com/YoannKAISER/Projet4.git"
           p4="Lien vers le site"
           p4Lien="https://yoannkaiser.github.io/Projet4/"
+          icone={returnArrow}
         />
     },
     {
@@ -79,8 +107,8 @@ export default class Example extends Component {
         <FlipCard 
           image={PrintIt} 
           title="Print It" 
-          width="350px" 
-          height="350px" 
+          width="210px" 
+          height="210px" 
           alt="Print It"
           h2="Premiers pas sur le langage JavaScript" 
           h3="Print It" 
@@ -88,6 +116,7 @@ export default class Example extends Component {
             Vous débutez comme développeur front-end en freelance, et venez de décrocher une offre pour dynamiser le site Internet statique d’une petite imprimerie familiale nommée Print it."
           link="Lien vers le code du projet"
           lien="https://github.com/YoannKAISER/Projet5.git"
+          icone={returnArrow}
         />
     },
     {
@@ -96,8 +125,8 @@ export default class Example extends Component {
         <FlipCard 
           image={SophieBluel} 
           title="Sophie Bluel" 
-          width="350px" 
-          height="350px" 
+          width="210px" 
+          height="210px" 
           alt="Sophie Bluel"
           h2="Créez une page web dynamique avec JavaScript" 
           h3="Sophie Bluel" 
@@ -105,6 +134,7 @@ export default class Example extends Component {
             Vous travaillez comme développeur front-end d’une équipe qui travaille sur la conception du site portfolio d’une architecte d’intérieur."
           link="Lien vers le code du projet"
           lien="https://github.com/YoannKAISER/Projet6.git"
+          icone={returnArrow}
         />
     },
     {
@@ -113,16 +143,17 @@ export default class Example extends Component {
         <FlipCard 
           image={Kasa} 
           title="Kasa" 
-          width="350px" 
-          height="350px" 
+          width="210px" 
+          height="210px" 
           alt="Kasa"
           h2="Créez une application web de location immobilière avec React" 
           h3="Kasa" 
           p="Kasa vous recrute en tant que développeur front-end en freelance pour développer sa nouvelle plateforme web. 
-            Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans.
+            Kasa est dans la location d’appartements entre particuliers depuis près de 10 ans.
             Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET. La CTO, a donc lancé une refonte totale pour passer à une stack complète en React côté front-end."
           link="Lien vers le code du projet"
           lien="https://github.com/YoannKAISER/Projet8.git"
+          icone={returnArrow}
         />
     },
     {
@@ -131,8 +162,8 @@ export default class Example extends Component {
         <FlipCard 
           image={NinaCarducci} 
           title="Nina Carducci" 
-          width="350px" 
-          height="350px" 
+          width="210px" 
+          height="210px" 
           alt="Nina Carducci"
           h2="Optimisez le référencement d'un site de photographe" 
           h3="Nina Carducci" 
@@ -143,6 +174,7 @@ export default class Example extends Component {
           lien="https://github.com/YoannKAISER/Projet9.git"
           p9="Lien vers le site"
           p9Lien="https://yoannkaiser.github.io/Projet9/"
+          icone={returnArrow}
         />
     },
     {
@@ -151,8 +183,8 @@ export default class Example extends Component {
         <FlipCard 
           image={Events} 
           title="77Events" 
-          width="350px" 
-          height="350px" 
+          width="210px" 
+          height="210px" 
           alt="77Events"
           h2="Débuggez le site d'une agence d'événementiel" 
           h3="77Events" 
@@ -161,6 +193,7 @@ export default class Example extends Component {
           Le site est fonctionnel, mais quelques bugs entravent le bon usage par les visiteurs. 77events fait donc appel à vous pour finaliser le travail."
           link="Lien vers le code du projet"
           lien="https://github.com/YoannKAISER/Projet10.git"
+          icone={returnArrow}
         />
     },
     {
@@ -169,8 +202,8 @@ export default class Example extends Component {
         <FlipCard 
           image={ArgentBank} 
           title="Argent Bank" 
-          width="350px" 
-          height="350px" 
+          width="210px" 
+          height="210px" 
           alt="Argent Bank"
           h2="Implémentez le front-end d'une application bancaire avec React" 
           h3="Argent Bank" 
@@ -178,16 +211,19 @@ export default class Example extends Component {
             Argent Bank est une nouvelle banque en ligne qui souhaite percer dans le secteur bancaire."
           link="Lien vers le code du projet"
           lien="https://github.com/YoannKAISER/Projet11.git"
+          icone={returnArrow}
         />
     }
-].map((slide, index) => {
+  ].map((slide, index) => {
     return { ...slide, onClick: () => this.setState({ goToSlide: index }) };
   });
   
   render() {
+    const { carouselWidth, cardWidth, cardHeight } = this.state;
     return (
-      <div style={{ width: "50%", height: "350px", margin: "0 auto" }}>
+      <div style={{ width: carouselWidth, height: cardHeight, margin: "0 auto" }}>
         <Carousel
+          key={this.state.carouselWidth}
           slides={this.slides}
           goToSlide={this.state.goToSlide}
         />
@@ -195,12 +231,12 @@ export default class Example extends Component {
           style={{
             margin: "0 auto",
             marginTop: "2rem",
-            width: "50%",
+            width: carouselWidth,
             display: "flex",
             justifyContent: "space-around"
           }}>
         </div>
       </div>
     );
-  };
-};
+  }
+}

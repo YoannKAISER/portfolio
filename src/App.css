@@ -54,6 +54,7 @@ h1 {
   justify-content: center;
   align-items: center;
   color: white;
+  margin-top: 50px;
 }
 
 .presentDiv {
@@ -100,7 +101,7 @@ h1 {
 
 @media (max-width: 450px) {
   .aboutDiv {
-    margin-top: 720px;
+    margin-top: 740px;
   }
 }
 
@@ -158,7 +159,7 @@ h3 {
   }
 
   .skillsTitle {
-    margin-top: 300px;
+    margin-top: 380px;
   }
 
   .skillsDiv {
@@ -170,6 +171,24 @@ h3 {
 }
 
 /*Mes projets réalisés*/
+.projectSection {
+  background-position: unset;
+  justify-content: center;
+}
+
+.ProjectNav a {
+  color: black;
+  font-weight: bold;
+}
+
+.linkPortfolio {
+  position: absolute;
+  bottom: 50px;
+  color: blue;
+  text-decoration: underline;
+  right: 50px;
+}
+
 .carrousel {
   display: flex;
   flex-direction: row;
@@ -179,9 +198,20 @@ h3 {
 
 .flip {
   position: absolute;
-  width: 350px;
-  height: 350px;
+  width: 30px;
+  height: 15px;
+  right: 15px;
+  bottom: 15px;
   background-color: transparent;
+  border: none;
+}
+
+.returnArrow {
+  position: fixed;
+  width: 30px;
+  height: 25px;
+  bottom: 15px;
+  right: 15px;
 }
 
 .link {
@@ -189,8 +219,30 @@ h3 {
   text-decoration: underline;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .textCard {
-  font-size: smaller;
+  font-size: medium;
+}
+
+@media (max-width: 768px) {
+.projectSection {
+  padding-top: 50px;
+}
+
+.linkPortfolio {
+  bottom: 15px;
+}
+}  
+
+@media (max-width: 450px) {
+.projectSection {
+  background-position: 35%;
+  padding-top: 100px;
+}
+
+.textCard {
+  font-size: small;
+}
 }
