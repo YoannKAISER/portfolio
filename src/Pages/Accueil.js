@@ -12,17 +12,4 @@ function Accueil() {
     );
 };
 
-var DateMaintenant = new Date();
-var $Month = '6';
-var $Day = '18';
-var $Year = '1993';
-if (($Month < DateMaintenant.getMonth()) || ($Month === DateMaintenant.getMonth() && $Day <= DateMaintenant.getDate())) {
-    $age = DateMaintenant.getFullYear()-$Year;
-}
-else
-{
-   var $age = DateMaintenant.getFullYear()- $Year - 1;
-}
-
-
 export default Accueil;

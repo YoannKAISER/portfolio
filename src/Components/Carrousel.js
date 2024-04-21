@@ -10,7 +10,7 @@ import SophieBluel from "../Images/Projets/SophieBluel.webp";
 import Kasa from "../Images/Projets/Kasa.webp";
 import NinaCarducci from "../Images/Projets/NinaCarducci.webp";
 import Events from "../Images/Projets/77Events.webp";
-import ArgentBank from "../Images/Projets/Argent Bank.jpg";
+import ArgentBank from "../Images/Projets/Argent-Bank.webp";
 import FlipCard from "./FlipCard";
 import returnArrow from "../Images/icone_return.webp"
 

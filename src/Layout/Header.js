@@ -9,6 +9,7 @@ function Header() {
                 <Link to="/APropos">A propos de moi</Link>
                 <Link to="/Mes Compétences">Mes Compétences</Link>
                 <Link to="/Mes projets">Mes projets réalisés</Link>
+                <Link to="/Contact">Mes contacts</Link>
             </nav>
         </header>
     );

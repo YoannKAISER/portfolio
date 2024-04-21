@@ -24,7 +24,7 @@ export default function FlipCard({ image, h2, h3, p, link, lien, p4, p4Lien, p9,
     <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
         <Card style={cardStyle}>
         <img src={image} alt="Project" />
-        <button className="flip" onClick={flipCard}><img src={icone} className="returnArrow" /></button>
+        <button className="flip" onClick={flipCard}><img src={icone} className="returnArrow" alt="returnArrow" /></button>
         
         </Card>
         <Card style={cardStyle}>
@@ -36,7 +36,7 @@ export default function FlipCard({ image, h2, h3, p, link, lien, p4, p4Lien, p9,
             <Link to={p4Lien} className="link">{p4}</Link>
             <Link to={p9Lien} className="link">{p9}</Link>
           </div>
-          <button className="flip" onClick={flipCard}><img src={icone} className="returnArrow" /></button>
+          <button className="flip" onClick={flipCard}><img src={icone} className="returnArrow" alt="returnArrow" /></button>
         </Card>
     </ReactCardFlip>
   );

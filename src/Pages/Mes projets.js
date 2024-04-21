@@ -1,5 +1,4 @@
 import React from "react";
-import Header from '../Layout/Header';
 import bgImg from "../Images/Fond_décran_page_mes_projets.webp"
 import Carrousel from "../Components/Carrousel";
 import { Link } from "react-router-dom";
@@ -14,6 +13,7 @@ function MesProjets() {
                     <Link to="/APropos">A propos de moi</Link>
                     <Link to="/Mes Compétences">Mes Compétences</Link>
                     <Link to="/Mes projets">Mes projets réalisés</Link>
+                    <Link to="/Contact">Mes contacts</Link>
                 </nav>
             </header>
             <section className="projectSection" style={{backgroundImage: `url(${bgImg})`, backgroundColor:"#ff7777"}}>
