@@ -12,18 +12,24 @@ function Contact() {
     return (
         <>
             <Header />
-            <section style={{backgroundColor:"#4d4d4d"}}>
+            <section className="contactSection">
                 <h2 style={{color:"white"}}>Contactez-moi</h2>
-                <div style={{width:"100%", display:"flex", flexDirection:"row",justifyContent:"space-evenly" ,gap:"50px"}}>
+                <div className="contactDiv">
                     <ContactForm />
                     <div>
                         <h3>En me retrouvant sur mes réseaux-sociaux</h3>
-                        <div style={{display:"flex", gap:"30px", marginTop:"3em"}}>
-                            <a href="https://www.linkedin.com/in/yoannkaiser/" className="networksLink"><img src={LogoLinkedin} alt="Linkedin" className="logos" /></a>
-                            <a href="https://www.facebook.com/profile.php?id=61558430682110" className="networksLink"><img src={LogoFacebook} alt="Facebook" className="logos" /></a>
-                            <a href="https://www.instagram.com/kaiseryoann/" className="networksLink"><img src={LogoInstagram} alt="Instagram" className="logos" /></a>
-                            <a href="https://www.threads.net/@kaiseryoann" className="networksLink"><img src={LogoThreads} alt="Threads" className="logos" /></a>
+                        <div className="linksNetworks">
+                            <div className="iconeNetworks">
+                                <a href="https://www.linkedin.com/in/yoannkaiser/" className="networksLink"><img src={LogoLinkedin} alt="Linkedin" className="logos" /></a>
+                                <a href="https://www.facebook.com/profile.php?id=61558430682110" className="networksLink"><img src={LogoFacebook} alt="Facebook" className="logos" /></a>
+                            </div>
+                            <div className="iconeNetworks">
+                                <a href="https://www.instagram.com/kaiseryoann/" className="networksLink"><img src={LogoInstagram} alt="Instagram" className="logos" /></a>
+                                <a href="https://www.threads.net/@kaiseryoann" className="networksLink"><img src={LogoThreads} alt="Threads" className="logos" /></a>
+                            </div>
+                            <div className="iconeNetworks">
                             <a href="https://twitter.com/YoannKaiser" className="networksLink"><img src={LogoX} alt="X" className="logos" /></a>
+                            </div>
                         </div>
                     </div>
                 </div>

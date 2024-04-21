@@ -53,7 +53,7 @@ export default class ContactForm extends Component {
   render() {
     const { firstName, lastName, email, message } = this.state;
     return (
-        <div style={{width:"30%"}}>
+        <div className="formDiv">
           <h3>Via le formulaire</h3>
           <form style={{position:"relative", display:"flex", flexDirection: "column", alignItems: "baseline"}} onSubmit={this.handleSubmit}>
             <label>

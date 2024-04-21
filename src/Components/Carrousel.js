@@ -219,7 +219,7 @@ export default class Carrousel extends Component {
   });
   
   render() {
-    const { carouselWidth, cardWidth, cardHeight } = this.state;
+    const { carouselWidth, cardHeight } = this.state;
     return (
       <div style={{ width: carouselWidth, height: cardHeight, margin: "0 auto" }}>
         <Carousel

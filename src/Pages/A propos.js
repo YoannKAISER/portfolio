@@ -4,6 +4,20 @@ import bgImg from "../Images/Fond_décran_page_a_propos.webp"
 import Footer from '../Layout/Footer';
 
 
+var DateMaintenant = new Date();
+var $Month = '6';
+var $Day = '18';
+var $Year = '1993';
+var $age;
+
+if (($Month < DateMaintenant.getMonth()) || ($Month === DateMaintenant.getMonth() && $Day <= DateMaintenant.getDate())) {
+    $age = DateMaintenant.getFullYear()-$Year;
+}
+else
+{
+   $age = DateMaintenant.getFullYear()- $Year - 1;
+}
+
 function APropos() {
     return (
         <>
@@ -13,7 +27,7 @@ function APropos() {
                     <h2>Je me présente</h2>
                     <div className="presentDiv" style={{fontSize:"large"}}>
                         <p style={{margin:"0"}}>
-                            Je m'appelle Yoann, j'ai {$age} ans.<br/> Ayant fait des études sanitaires et sociales, j'ai suivi par la suite une première année en formation infirmier.<br/><br/>
+                            Je m'appelle Yoann, j'ai {$age} ans.<br/><br/> Ayant fait des études sanitaires et sociales, j'ai suivi par la suite une première année en formation infirmier.<br/><br/>
                             J'ai ensuite été volontaire de service civique dans une association de secours pendant 6 mois, et je suis resté dans cette association pendant 5 ans en tant que bénévole.<br/>
                             En parallèle de mon bénévolat, j'ai travaillé dans un garage automobile.<br/>
                             J'ai ensuite travailler en tant que auxiliaire-ambulancier dans une entreprise d'ambulances privées. 
@@ -31,18 +45,5 @@ function APropos() {
         </>
     );
 };
-
-var DateMaintenant = new Date();
-var $Month = '6';
-var $Day = '18';
-var $Year = '1993';
-if (($Month < DateMaintenant.getMonth()) || ($Month === DateMaintenant.getMonth() && $Day <= DateMaintenant.getDate())) {
-    $age = DateMaintenant.getFullYear()-$Year;
-}
-else
-{
-   var $age = DateMaintenant.getFullYear()- $Year - 1;
-}
-
 
 export default APropos;
