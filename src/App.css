@@ -288,6 +288,16 @@ textarea {
   margin-top: 3em;
 }
 
+@media (max-width: 768px) {
+  .contactSection {
+    padding-top: 120px;
+  }
+
+  .contactDiv {
+    padding-bottom: 60px;
+  }
+}
+
 @media (max-width: 450px) {
   .contactSection {
     padding-top: 720px;
