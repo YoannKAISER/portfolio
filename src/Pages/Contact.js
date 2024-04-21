@@ -19,11 +19,11 @@ function Contact() {
                     <div>
                         <h3>En me retrouvant sur mes réseaux-sociaux</h3>
                         <div style={{display:"flex", gap:"30px", marginTop:"3em"}}>
-                            <a href="www.linkedin.com/in/yoannkaiser" className="networksLink"><img src={LogoLinkedin} alt="Linkedin" className="logos" /></a>
-                            <a href="www.facebook.com/profile.php?id=61558430682110" className="networksLink"><img src={LogoFacebook} alt="Facebook" className="logos" /></a>
-                            <a href="www.instagram.com/kaiseryoann" className="networksLink"><img src={LogoInstagram} alt="Instagram" className="logos" /></a>
-                            <a href="www.threads.net/@kaiseryoann" className="networksLink"><img src={LogoThreads} alt="Threads" className="logos" /></a>
-                            <a href="twitter.com/YoannKaiser" className="networksLink"><img src={LogoX} alt="X" className="logos" /></a>
+                            <a href="https://www.linkedin.com/in/yoannkaiser/" className="networksLink"><img src={LogoLinkedin} alt="Linkedin" className="logos" /></a>
+                            <a href="https://www.facebook.com/profile.php?id=61558430682110" className="networksLink"><img src={LogoFacebook} alt="Facebook" className="logos" /></a>
+                            <a href="https://www.instagram.com/kaiseryoann/" className="networksLink"><img src={LogoInstagram} alt="Instagram" className="logos" /></a>
+                            <a href="https://www.threads.net/@kaiseryoann" className="networksLink"><img src={LogoThreads} alt="Threads" className="logos" /></a>
+                            <a href="https://twitter.com/YoannKaiser" className="networksLink"><img src={LogoX} alt="X" className="logos" /></a>
                         </div>
                     </div>
                 </div>
