@@ -74,6 +74,11 @@ h1 {
 }
 
 @media (max-width: 1024px) {
+  .aboutSection {
+    height: auto;
+    padding-bottom: 10px;
+  }
+
   .aboutDiv {
     margin-top: 250px;
   }
@@ -81,16 +86,22 @@ h1 {
 @media (max-width: 768px) {
   .aboutDiv {
     margin-top: 450px;
+    height: unset;
   }
 }
 
 @media (max-width: 450px) {
+  .aboutSection {
+    height: auto;
+    padding-bottom: 10px;
+  }
+
   h1 {
     font-size: 50px;
   }
 
   .aboutDiv {
-    margin-top: 820px;
+    padding-top: 350px;
   }
   
   .presentDiv {

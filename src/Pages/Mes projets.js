@@ -13,7 +13,7 @@ function MesProjets() {
                     <Link to="/APropos">A propos de moi</Link>
                     <Link to="/Mes Compétences">Mes Compétences</Link>
                     <Link to="/Mes projets">Mes projets réalisés</Link>
-                    <Link to="/Contact">Mes contacts</Link>
+                    <Link to="/Contact">Me contacter</Link>
                 </nav>
             </header>
             <section className="projectSection" style={{backgroundImage: `url(${bgImg})`, backgroundColor:"#ff7777"}}>

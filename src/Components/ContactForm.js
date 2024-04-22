@@ -56,45 +56,49 @@ export default class ContactForm extends Component {
         <div className="formDiv">
           <h3>Via le formulaire</h3>
           <form style={{position:"relative", display:"flex", flexDirection: "column", alignItems: "baseline"}} onSubmit={this.handleSubmit}>
-            <label>
+            <label htmlFor="lastname">
               Votre NOM :
             </label>
             <input
               type="text"
               name="lastName"
               value={lastName}
+              id="lastname"
               onChange={this.handleChange}
               required
             />
 
-            <label>
+            <label htmlFor="firstname">
               Votre Prénom :
             </label>
             <input
               type="text"
               name="firstName"
               value={firstName}
+              id="firstname"
               onChange={this.handleChange}
               required
             />
 
-            <label>
+            <label htmlFor="email">
               Votre email:
             </label>
             <input
               type="email"
               name="email"
               value={email}
+              id="email"
               onChange={this.handleChange}
               required
             />
 
-            <label>
+            <label htmlFor="message">
               Votre message:
             </label>
             <textarea
               name="message"
               value={message}
+              id="message"
               onChange={this.handleChange}
               required
             ></textarea>

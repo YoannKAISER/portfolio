@@ -22,7 +22,7 @@ function APropos() {
     return (
         <>
             <Header style={{position:"relative"}} />
-            <section style={{backgroundImage: `url(${bgImg})`, overflow:"auto"}}>
+            <section className="aboutSection" style={{backgroundImage: `url(${bgImg})`}}>
                 <div className="aboutDiv">
                     <h2>Je me présente</h2>
                     <div className="presentDiv" style={{fontSize:"large"}}>
