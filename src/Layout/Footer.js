@@ -5,7 +5,7 @@ function Footer() {
         <footer>
             <div className="footerDiv">
             <p>Intégrateur web</p>
-            <p>Contact : yoannkaiser.dw@gmail.com</p>
+            <p>Yoann KAISER | Avril 2024 | Tous droits réservés</p>
             </div>
         </footer>
     );

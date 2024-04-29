@@ -107,7 +107,7 @@ footer {
 }
 
 @media (max-width: 450px) {
-  footer {
-    height: 150px;
+  footer p {
+    font-weight: 100;
   }
 }
