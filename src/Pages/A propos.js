@@ -29,8 +29,8 @@ function APropos() {
                         <p style={{margin:"0"}}>
                             Je m'appelle Yoann, j'ai {$age} ans.<br/><br/> 
                             Étant intéressé depuis longtemps par l'informatique, le web et la programmation, 
-                            j'ai décidé d'en faire mon métier et de faire donc la formation d'intégrateur web chez <a href="https://openclassrooms.com/" className="oc">OpenClassrooms</a>.<br/>
-                            Cette formation m'a fait découvrir le SEO, l'amélioration des performances des sites et applications web, en plus de la programmation, et m'en a rendu intéressé par ceux-ci.<br/>
+                            j'ai décidé d'en faire mon métier et de faire donc la formation d'intégrateur web chez <a href="https://openclassrooms.com/" className="oc">OpenClassrooms</a>, diplôme enregistré au RNCP.<br/>
+                            Cette formation m'a fait découvrir le SEO, l'amélioration des performances des sites et applications web, et m'en a rendu intéressé par ceux-ci.<br/>
                             J'aime le fait que dans ce domaine, on en apprend tous les jours et je trouve fascinant la puissance du web et la quantité de ce qu'on peut y faire.
                         </p>
                     </div>
