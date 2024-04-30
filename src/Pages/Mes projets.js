@@ -8,7 +8,7 @@ function MesProjets() {
     return(
         <>
            <header>
-                <Link to="/Projet12" style={{fontSize:"50px", color:"black", fontFamily:"Italianno", backgroundColor:"transparent"}} className="linkHeader">Yoann KAISER</Link>
+                <Link to="/" style={{fontSize:"50px", color:"black", fontFamily:"Italianno", backgroundColor:"transparent"}} className="linkHeader">Yoann KAISER</Link>
                 <nav className="ProjectNav">
                     <Link to="/APropos">A propos de moi</Link>
                     <Link to="/Mes Compétences">Mes Compétences</Link>

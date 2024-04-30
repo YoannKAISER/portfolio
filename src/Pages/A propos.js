@@ -4,11 +4,11 @@ import bgImg from "../Images/Fond_décran_page_a_propos.webp"
 import Footer from '../Layout/Footer';
 
 
-var DateMaintenant = new Date();
-var $Month = '6';
-var $Day = '18';
-var $Year = '1993';
-var $age;
+let DateMaintenant = new Date();
+let $Month = '6';
+let $Day = '18';
+let $Year = '1993';
+let $age;
 
 if (($Month < DateMaintenant.getMonth()) || ($Month === DateMaintenant.getMonth() && $Day <= DateMaintenant.getDate())) {
     $age = DateMaintenant.getFullYear()-$Year;
