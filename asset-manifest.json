@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.a586c8c9.css",
+    "main.css": "/static/css/main.0fa77559.css",
     "main.js": "/static/js/main.06e07519.js",
     "static/media/Fond_décran_page_daccueil.webp": "/static/media/Fond_décran_page_daccueil.8fc9f808dc32618d9f5a.webp",
     "static/media/Fond_décran_page_mes_projets.webp": "/static/media/Fond_décran_page_mes_projets.5ed8170dbd87cf54aea2.webp",
@@ -28,11 +28,11 @@
     "static/media/Logo_Facebook.webp": "/static/media/Logo_Facebook.3b9b5bdc15aa84384dff.webp",
     "static/media/Logo_Threads.webp": "/static/media/Logo_Threads.cc98446ff1dbc74f19b6.webp",
     "static/media/Logo_X.svg": "/static/media/Logo_X.08458349a4f5cde9c47b5e39035c68c0.svg",
-    "main.a586c8c9.css.map": "/static/css/main.a586c8c9.css.map",
+    "main.0fa77559.css.map": "/static/css/main.0fa77559.css.map",
     "main.06e07519.js.map": "/static/js/main.06e07519.js.map"
   },
   "entrypoints": [
-    "static/css/main.a586c8c9.css",
+    "static/css/main.0fa77559.css",
     "static/js/main.06e07519.js"
   ]
 }
