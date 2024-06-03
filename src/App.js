@@ -5,7 +5,6 @@ import APropos from './Pages/A propos';
 import MesCompétences from './Pages/Mes compétences';
 import MesProjets from './Pages/Mes projets';
 import Contact from './Pages/Contact';
-import { SpeedInsights } from "@vercel/speed-insights/react"
 
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
       </Routes>
     </main>
   );
-  <SpeedInsights/>
 };
 
 export default App;
